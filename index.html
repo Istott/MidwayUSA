@@ -11,11 +11,23 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="js/nav.js" async></script>
+  <script src="js/feedback.js" async></script>
 
 </head>
 
 <body>
+    <div class="navigation">
+        <div class="top">
+            <div class="journal">
+                <h1>WeightLifting Journal</h1>
+            </div>
+            
+            <div id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
 
     <div class="container home">
         <header class="intro">
@@ -23,33 +35,30 @@
                 <div class="topimg">
                 <img src="img/Vectary texture.png" alt="phone">
                 </div>
-
-                <div class="finally">
-                    <h2>Finally, an app that tracks your lifts fast.</h2>
-                    
-                    <p>Focus on your workout with your weightlifter. Surpass your limits with minimal distraction and clutter.</p>
-                    <div class="signup">
-                        <button onclick="window.location.href = 'https://weightlifting-journal-bw.netlify.com';">Sign up</button>
-                    </div>
-                </div>
             </div>
         </header>
 
         <section class="middle">
+            <div class="productSuggestionForm" >
+                <button onclick="toggleProductForm()">Product Suggestion form</button>
+                <div id="productForm">
+                    <p>this is the product suggestion form</p>
+                </div>
+            </div>
+
+            <div class="contactUsForm" >
+                <button onclick="toggleContactForm()">Contact Us form</button>
+                <div id="contactForm">
+                    <p>this is the Contact Us form</p>
+                </div>
+            </div>
 
         </section>
 
         <footer>
             <div class="copyright">
-                <p>Copyright 2020</p> 
-                <p1>Lambda Team</p1>
+                <p1>©2021 MidwayUSA. All rights reserved</p1>
             </div>
-            
-            <nav>
-                <a href="#"><img src="img/icon.png" alt="contact">
-                <icon></icon></a>
-                <a href="#">Contact Us</a>
-            </nav>
         </footer>
     </div>
 </body>
