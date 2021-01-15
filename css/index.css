@@ -13,7 +13,7 @@ body {
 
 .navigation {
     background-color: rgba(255, 254, 254, 0.3);
-    box-shadow: 0px 5px 5px gray;
+    box-shadow: 0px 2px 4px gray;
     border-radius: 2px;
     padding-left: 1%;
     margin-top: 0%;
@@ -30,25 +30,92 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 30%;
 }
 
 .top #myLinks a {
-    padding: 2%;
+    /* padding: 2%;
     margin: 2%;
     text-decoration: none;
     border: 1px gray solid;
     border-radius: 2px;
-    color: #080E33;
-    text-
+    color: #080E33; */
+    text-decoration: none;
+    background-color: #FFC700;
+    color: rgb(6, 22, 53);
+    border-radius: 3px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 2% 1%;
+    width: 40%;
+    margin: 1%;
+}
+
+.top #myLinks a:hover {
+    background:rgba(6, 22, 53, 0.8);
+    /* transition: .6s; */
 }
 
 .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
+    height: 50vh;
+    /* border: 1px red solid; */
+}
+
+.productSuggestionForm {
+    /* border: 1px red solid; */
+    width: 30%;
+
+    /* background-color: rgba(255, 255, 255, 0); */
+}
+
+.contactUsForm {
+    /* border: 1px red solid; */
+    width: 30%;
+    /* background-color: rgba(255, 255, 255, 0); */
+    
 }
 
 #productForm, #contactForm {
     display: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 2px 4px gray;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 3px;
+}
+
+.fields input, .fields textarea{
+    padding: 2% 0 2% 1% ;
+    margin: 1% 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px gray solid;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    width: 80%;
+    background-color: rgba(6, 22, 53, 0.2);
+}
+
+.actions input {
+    background-color: rgb(6, 22, 53);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+    padding: 2% 1%;
+    width: 40%;
+    margin: 1%;
+}
+
+.actions input:hover {
+    background:rgba(6, 22, 53, 0.8);
+    /* transition: .6s; */
 }
 
 

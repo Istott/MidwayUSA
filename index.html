@@ -29,27 +29,87 @@
         </div>
     </div>
 
-    <div class="container home">
-        <header class="intro">
-            <div class="topheader">
-                <div class="topimg">
-                <img src="img/Vectary texture.png" alt="phone">
-                </div>
-            </div>
-        </header>
-
+    <div class="container">
         <section class="middle">
             <div class="productSuggestionForm" >
-                <button onclick="toggleProductForm()">Product Suggestion form</button>
+                <span><p>Have product ideas?</p><button onclick="toggleProductForm()">Share with us</button></span>
                 <div id="productForm">
-                    <p>this is the product suggestion form</p>
+                    <form method="post" action="https://formspree.io/xdozegkw">
+                        <div class="fields">
+                            <div class="field half">
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    id="name" 
+                                    placeholder="Name"
+                                    required
+                                />
+                            </div>
+                            <div class="field half">
+                                <input 
+                                    type="text" 
+                                    name="email" 
+                                    id="email" 
+                                    placeholder="Email"
+                                    required
+                                />
+                            </div>
+                            <div class="field">
+                                <textarea 
+                                    name="message" 
+                                    id="message"
+                                    placeholder="What product do you have in mind?" 
+                                    rows="4"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <input type="submit" value="Send Message" class="primary" />
+                            <input type="reset" value="Reset" />
+                        </div>
+                    </form>
                 </div>
             </div>
 
             <div class="contactUsForm" >
-                <button onclick="toggleContactForm()">Contact Us form</button>
+                <span><p>Have a question?</p><button onclick="toggleContactForm()">Ask us here</button></span>
                 <div id="contactForm">
-                    <p>this is the Contact Us form</p>
+                    <form method="post" action="https://formspree.io/xdozegkw">
+                        <div class="fields">
+                            <div class="field half">
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    id="name" 
+                                    placeholder="Name"
+                                    required
+                                />
+                            </div>
+                            <div class="field half">
+                                <input 
+                                    type="text" 
+                                    name="email" 
+                                    id="email" 
+                                    placeholder="Email"
+                                    required
+                                />
+                            </div>
+                            <div class="field">
+                                <textarea 
+                                    name="message" 
+                                    id="message"
+                                    placeholder="What's your question?" 
+                                    rows="4"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <input type="submit" value="Send Message" class="primary" />
+                            <input type="reset" value="Reset" />
+                        </div>
+                    </form>
                 </div>
             </div>
 
